@@ -7,4 +7,21 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Arquivos_Finalizados\**" />
+    <Compile Remove="Arquivos_Redimensionado\**" />
+    <EmbeddedResource Remove="Arquivos_Finalizados\**" />
+    <EmbeddedResource Remove="Arquivos_Redimensionado\**" />
+    <None Remove="Arquivos_Finalizados\**" />
+    <None Remove="Arquivos_Redimensionado\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Arquivos_Entrada\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="8.0.0" />
+  </ItemGroup>
+
 </Project>
